@@ -13,7 +13,7 @@
 ---
 
 ## 📖 Overview
-This project demonstrates an innovative approach to Test-Driven Development (TDD) using Cypress, enhanced with AI-driven test generation. The framework is designed to streamline the Software Testing Life Cycle (STLC) by enabling test creation before the actual UI implementation.
+This project demonstrates an innovative approach to Test-Driven Development (TDD) using Cypress, enhanced with AI-driven test generation. The framework is designed to streamline the Software Testing Life Cycle (STLC) by enabling test creation before the actual UI implementation.Full requirement traceability is implemented, ensuring every test case is mapped to specific requirements, providing complete coverage visibility and audit trails throughout the testing lifecycle.
 
 ---
 
