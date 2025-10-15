@@ -1,0 +1,96 @@
+# 🧩 Project: E-Commerce Checkout Flow (AI-Augmented TDD with Cypress)
+
+## 🎯 Objective
+Use **AI-Augmented Test-Driven Development (TDD)** to prepare Cypress-based automation
+*before* the actual web app is built.
+
+The AI Agent should generate:
+- Cypress tests mapped to requirements (traceable IDs)
+- Page Object Model classes with placeholder locators
+- Test data, utility scripts, and base structure
+
+---
+
+## 🧱 Requirement → Test Mapping Convention
+
+| Type | Example Format | Description |
+|------|----------------|--------------|
+| Requirement ID | `REQ-<FEATURE>-<NUMBER>` | Unique ID for each functional requirement |
+| Test Case ID | `TC-<FEATURE>-<NUMBER>` | Test mapped to requirement |
+| Feature Name | Used to name Page Object and test files | e.g., `Login`, `Cart`, `Checkout` |
+
+---
+
+## 🧠 Feature 1: User Login
+
+### Requirement ID: `REQ-LOGIN-001`
+Registered users can log in using valid credentials.
+
+### Acceptance Criteria
+- Login page should have username & password fields.
+- Valid login redirects to dashboard.
+- Invalid credentials show error message.
+
+### Test Case Mapping
+
+| Test Case ID | Scenario | Requirement ID |
+|---------------|-----------|----------------|
+| TC-LOGIN-001 | Verify login with valid credentials | REQ-LOGIN-001 |
+| TC-LOGIN-002 | Verify login with invalid credentials | REQ-LOGIN-001 |
+| TC-LOGIN-003 | Verify error message appears on failed login | REQ-LOGIN-001 |
+
+---
+
+## 🛒 Feature 2: Add to Cart
+
+### Requirement ID: `REQ-CART-001`
+Users can add products to their shopping cart.
+
+### Acceptance Criteria
+- Each product card has “Add to Cart”.
+- Cart counter updates on addition.
+- Cart page lists added products.
+
+### Test Case Mapping
+
+| Test Case ID | Scenario | Requirement ID |
+|---------------|-----------|----------------|
+| TC-CART-001 | Verify adding a single product | REQ-CART-001 |
+| TC-CART-002 | Verify adding multiple products | REQ-CART-001 |
+| TC-CART-003 | Verify cart counter increments correctly | REQ-CART-001 |
+
+---
+
+## 💳 Feature 3: Checkout Flow
+
+### Requirement ID: `REQ-CHECKOUT-001`
+Users can checkout with products in their cart.
+
+### Acceptance Criteria
+- Checkout button navigates to form.
+- Form accepts user details.
+- Confirmation message appears after success.
+
+### Test Case Mapping
+
+| Test Case ID | Scenario | Requirement ID |
+|---------------|-----------|----------------|
+| TC-CHECKOUT-001 | Verify checkout with valid details | REQ-CHECKOUT-001 |
+| TC-CHECKOUT-002 | Verify error for empty cart checkout | REQ-CHECKOUT-001 |
+| TC-CHECKOUT-003 | Verify confirmation message appears | REQ-CHECKOUT-001 |
+
+---
+---
+
+## 🧩 Example Implementation Notes
+- Replace all `#TODO` selectors once UI is ready.  
+- Each test must log its `Requirement ID` and `Test Case ID`.  
+- Extend later with Allure/Mochawesome for traceability.  
+- Maintain one-to-one mapping between requirements and test files.
+
+---
+
+## 💡 AI-Augmented TDD Note
+> The AI Agent must generate **traceable test cases**, each linked to its
+> originating requirement ID and scenario.  
+> This ensures test coverage can be validated even before UI exists.
