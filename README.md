@@ -228,5 +228,5 @@ describe('User Login Feature', () => {
 - [Page Object Pattern](https://martinfowler.com/bliki/PageObject.html)
 - [Test-Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
-## � Author
+## Author
 **Saran Kumar**
