@@ -1,9 +1,6 @@
 # 🧪 AI-Augmented TDD Cypress Framework
 
-## � Author
-**Saran Kumar**
--
-## �📋 Overview
+## 📋 Overview
 This project demonstrates an innovative approach to Test-Driven Development (TDD) using Cypress, enhanced with AI-driven test generation. The framework is designed to streamline the Software Testing Life Cycle (STLC) by enabling test creation before the actual UI implementation.
 
 ## 🎯 Key Features
@@ -230,3 +227,6 @@ describe('User Login Feature', () => {
 - [Cypress Documentation](https://docs.cypress.io)
 - [Page Object Pattern](https://martinfowler.com/bliki/PageObject.html)
 - [Test-Driven Development](https://www.agilealliance.org/glossary/tdd/)
+
+## � Author
+**Saran Kumar**
